@@ -14,3 +14,13 @@ for _ in range(n):
 
 secondhi = sorted(list(set([marks for name, marks in l])))[1]       #list comprehension -- only select marks for marks and names
 print('\n'.join([a for a, b in sorted(l) if b == secondhi]))
+
+#Finding the percentage
+n = int(input())
+dic = {}
+for _ in range(n):
+    info = [i for i in input().split()]
+    marks = list(map(float, info[1:]))
+    dic[info[0]] = sum(marks)/len(marks)
+
+print('{0:.2f}'.format(dic[input()]))
