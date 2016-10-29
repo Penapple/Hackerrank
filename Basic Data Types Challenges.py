@@ -20,7 +20,7 @@ n = int(input())
 dic = {}
 for _ in range(n):
     info = [i for i in input().split()]
-    marks = list(map(float, info[1:]))
-    dic[info[0]] = sum(marks)/len(marks)
+    marks = list(map(float, info[1:]))          
+    dic[info[0]] = sum(marks)/len(marks)         #e.g dict['a'] = 23 to add element in dict
 
 print('{0:.2f}'.format(dic[input()]))
