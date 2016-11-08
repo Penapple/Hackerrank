@@ -9,6 +9,6 @@ print(np.reshape(a,(3,3)))
 
 #Transpose and Flatten
 n, m = map(int, input().split())
-a = np.array(list(input().split() for _ in range(n)), int)
+a = np.array(list(input().split() for _ in range(n)), int)    #list with for in range generates list in list
 print(a.transpose())
 print(a.flatten())
