@@ -12,3 +12,10 @@ n, m = map(int, input().split())
 a = np.array(list(input().split() for _ in range(n)), int)    #list with for in range generates list in list
 print(a.transpose())
 print(a.flatten())
+
+#Concatenate
+n, m, p = map(int, input().split())
+
+a = np.array(list(input().split() for _ in range(n)), int)
+b = np.array(list(input().split() for _ in range(m)), int)
+print(np.concatenate((a, b), axis = 0))
