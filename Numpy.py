@@ -23,3 +23,8 @@ print(np.concatenate((a, b), axis = 0))
 N = tuple(map(int, input().split()))
 print(np.zeros(N, int))         #zeros/ones (num, shape, shape) or (shape, shape)
 print(np.ones(N, int))
+
+#Eye and Identity
+import numpy as np
+n, m = map(int, input().split())
+print(np.eye(n, m))
