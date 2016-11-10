@@ -40,3 +40,10 @@ print(a+b, a-b, a*b, a//b, a%b, a**b, sep='\n')
 #Floor, Ceil and Rint
 a = np.array(list(input().split()), float)
 print(np.floor(a), np.ceil(a), np.rint(a), sep='\n')
+
+#Sum and Prod
+n, m = map(int, input().split())
+a = np.array(list(input().split() for _ in range(n)), int)
+b = np.sum(a, axis=0)
+c = np.prod(b)
+print(c)
