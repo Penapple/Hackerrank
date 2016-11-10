@@ -47,3 +47,24 @@ a = np.array(list(input().split() for _ in range(n)), int)
 b = np.sum(a, axis=0)
 c = np.prod(b)
 print(c)
+
+#Min and Max
+n, m = map(int, input().split())
+a = np.array(list(input().split() for _ in range(n)), int)
+b = np.min(a, axis=1)
+c = np.max(b, axis=0)
+print(c)
+
+#Mean, Var and Std
+n, m = map(int, input().split())
+a = np.array(list(input().split() for _ in range(n)), int)
+print(np.mean(a, axis=1), np.var(a, axis=0), np.std(a), sep='\n')
+
+#Dot and Cross
+n = int(input())
+a, b = (np.array(list(input().split() for _ in range(n)), int) for _ in range(2))
+print(np.dot(a, b))
+
+#Inner and Outer
+a, b = (np.array(list(input().split()), int) for _ in range(2))
+print(np.inner(a, b), np.outer(a,b), sep='\n')
