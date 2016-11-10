@@ -28,3 +28,11 @@ print(np.ones(N, int))
 import numpy as np
 n, m = map(int, input().split())
 print(np.eye(n, m))
+
+#Array Mathematics
+n, m = map(int, input().split())
+a = np.array([input().split() for _ in range(n)], int)
+b = np.array([input().split() for _ in range(n)], int)
+#--- Or use command below just in one row ---
+#a, b = (np.array([input().split() for _ in range(n)], int) for _ in range(2))
+print(a+b, a-b, a*b, a//b, a%b, a**b, sep='\n')
