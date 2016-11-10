@@ -36,3 +36,7 @@ b = np.array([input().split() for _ in range(n)], int)
 #--- Or use command below just in one row ---
 #a, b = (np.array([input().split() for _ in range(n)], int) for _ in range(2))
 print(a+b, a-b, a*b, a//b, a%b, a**b, sep='\n')
+
+#Floor, Ceil and Rint
+a = np.array(list(input().split()), float)
+print(np.floor(a), np.ceil(a), np.rint(a), sep='\n')
