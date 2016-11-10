@@ -15,7 +15,11 @@ print(a.flatten())
 
 #Concatenate
 n, m, p = map(int, input().split())
-
 a = np.array(list(input().split() for _ in range(n)), int)
 b = np.array(list(input().split() for _ in range(m)), int)
 print(np.concatenate((a, b), axis = 0))
+
+#Zeros and Ones
+N = tuple(map(int, input().split()))
+print(np.zeros(N, int))         #zeros/ones (num, shape, shape) or (shape, shape)
+print(np.ones(N, int))
