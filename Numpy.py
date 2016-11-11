@@ -68,3 +68,8 @@ print(np.dot(a, b))
 #Inner and Outer
 a, b = (np.array(list(input().split()), int) for _ in range(2))
 print(np.inner(a, b), np.outer(a,b), sep='\n')
+
+#Polynomials
+a = np.polyval(list(map(float,input().split())), int(input()))
+print(a)
+#poly, roots, polyval, polyfit, etc.    Poly -->http://mathworld.wolfram.com/PolynomialRoots.html
