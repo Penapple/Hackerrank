@@ -73,3 +73,8 @@ print(np.inner(a, b), np.outer(a,b), sep='\n')
 a = np.polyval(list(map(float,input().split())), int(input()))
 print(a)
 #poly, roots, polyval, polyfit, etc.    Poly -->http://mathworld.wolfram.com/PolynomialRoots.html
+
+#Linear Algebra
+n = int(input())
+a = np.linalg.det(np.array(list(input().split() for _ in range(n)), float))
+print(a)
